@@ -1,0 +1,19 @@
+{%load static%}
+<!DOCTYPE html>
+<head>
+    <!-- <link rel="stylesheet" href="/static/styles.css"> -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">    
+</head>
+
+<html><body>
+<h1>Hello World!</h1>
+<p>Welcome to my first Django project!</p>
+<table border="3" cellspacing="10" cellpadding="5">
+    {% for i in myvar %}
+<tr>
+    <td>{{i.id}}</td><td>{{i.name}}</td><td>{{i.mobile}}</td>
+</tr>
+    {%endfor%}
+</table>
+</body>
+</html>
